@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(is_prim_prog)
+project(is_prime_prog)
 
 set(CMAKE_CXX_STANDARD 14)
 
