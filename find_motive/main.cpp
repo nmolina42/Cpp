@@ -1,21 +1,29 @@
 #include <iostream>
-#include <fstream>
+
+bool is_prime(int x)
+{
+    if (x <= 1) {
+        return false;
+    }
+
+    for (int i = 2; i <= x/2; ++i) {
+        if (x % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
 
 int main(int argc, char *argv[])
 {
-    std::ifstream file;
-    file.open(argv[1]);
-    if (file.fail()) {
-        std::cout << "The file " << argv[1] << " could not be opened.\n";
-        return 1;
-    }
-    std::string w;
-    int count = 0;
-    while(file >> w)
+    int n;
+    while(std::cin >> n)
     {
-        if(w.find(argv[2]) != std::string::npos)
-            count++;
+        if(is_prime(n))
+        {
+            std::cout << n << " is a prime: True\n";
+        }else
+            std::cout << n << " is a prime: False\n";
     }
-    std::cout << "The file " << argv[1] << " contains " << count << " words containing the motive "<< argv[2] <<"\n";
     return 0;
 }
