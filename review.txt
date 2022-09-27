@@ -1,0 +1,22 @@
+ Générale :
+ Il y'a trop de fichier superflue, le repo ne doit contenir seulement les dossiers des exos qui eux même ne continennent seulement le Cmakelists, les .h et .cpp
+ Problèmes Cmake car deux fichiers et ne contiennent pas les bons noms des .cpp (ATTENTION)
+  
+ IsPrimeProg :
+ l6-9 les deux conditions auraients pu être fusionées.
+ 0 et 1 ne sont pas premier (attention)
+ l10 implémentation correct mais trop de tours de boucle
+ l21 les valeurs doivent êtres lu avec std::cin et non pas avec argv (ATTENTION)
+ le programme pourrait être plus optimiser globalement.
+ 
+ Find_Motiv :
+ Trace de débuggage dans le code.
+ Fonction main Hardcoder.
+ Arguments non traités
+ l32 mauvaise condition, on ne cherche pas forcement un mot mais un motif, donc un substring dans un string(ATTENTION)
+
+
+En l'état les deux exercices n'ont pas le comportement attendu, les attentions devraient attirées votre attention ;D
+ 
+ 
+ 
