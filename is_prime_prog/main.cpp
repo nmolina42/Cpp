@@ -2,7 +2,7 @@
 
 bool is_prime(int x)
 {
-    if (x <= 0 || x == 1) {
+    if (x <= 1) {
         return false;
     }
 
@@ -16,13 +16,14 @@ bool is_prime(int x)
 
 int main(int argc, char *argv[])
 {
-    for( int i = 1; i < argc; i++)
+    int n;
+    while(std::cin >> n)
     {
-        if(is_prime(atoi(argv[i])))
+        if(is_prime(n))
         {
-            std::cout << argv[i] << " is a prime: True\n";
+            std::cout << n << " is a prime: True\n";
         }else
-            std::cout << argv[i] << " is a prime: False\n";
+            std::cout << n << " is a prime: False\n";
     }
     return 0;
 }
