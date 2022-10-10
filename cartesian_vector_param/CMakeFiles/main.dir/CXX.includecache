@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nicolas/Cpp/cartesian_vector_param/config.h
+
+/home/nicolas/Cpp/cartesian_vector_param/main_new.cc
+iostream
+-
+vector.hh
+/home/nicolas/Cpp/cartesian_vector_param/vector.hh
+vector
+-
+cstring
+-
+
+/home/nicolas/Cpp/cartesian_vector_param/vector.cpp
+vector.hh
+/home/nicolas/Cpp/cartesian_vector_param/vector.hh
+iostream
+-
+ostream
+-
+
+/home/nicolas/Cpp/cartesian_vector_param/vector.hh
+ostream
+-
+config.h
+/home/nicolas/Cpp/cartesian_vector_param/config.h
+
