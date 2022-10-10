@@ -31,7 +31,7 @@ Vector &Vector::operator+=(const Vector &rhs)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        data[i] += rhs[i];
+        data[i] = data[i] + rhs[i];
     }
     return *this;
 }
@@ -40,7 +40,7 @@ Vector &Vector::operator-=(const Vector &rhs)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        data[i] -= rhs[i];
+        data[i] = data[i] - rhs[i];
     }
     return *this;
 }
@@ -99,7 +99,7 @@ Vector operator*=(Vector &rhs, const value n)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        rhs[i] *= n;
+        rhs[i] = rhs[i] * n;
     }
     return rhs;
 }
@@ -108,7 +108,7 @@ Vector operator+=(Vector &rhs, const value n)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        rhs[i] += n;    
+        rhs[i] = rhs[i] + n;    
     }
     return rhs;
 }
@@ -117,6 +117,8 @@ std::ostream& operator<<(std::ostream &os, const Vector& rhs)
 {
     os << "{";
     for (int i = 0; i < rhs.get_size(); i++)
+    {
         os << rhs[i] << (i == rhs.get_size() - 1 ? "" : ",");
+    }
     return os << "}";
 }
