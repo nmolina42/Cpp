@@ -15,9 +15,10 @@ Vector::Vector()
 Vector::Vector(std::initializer_list<value> list)
 {
     size = list.size();
-    for (size_t i = 0; i < size ; i++)
+    size_t i = 0;
+    for (auto &elem : list)
     {
-        data[i] = list[i];
+        data[i++] = elem;
     }
 }
 
